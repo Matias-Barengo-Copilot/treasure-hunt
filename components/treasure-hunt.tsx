@@ -119,7 +119,7 @@ export function TreasureHunt() {
                 transition={{ duration: 0.5 }}
                 className="relative z-10"
             >
-                <h1 className="text-4xl font-bold mb-8 text-center text-yellow-700">Pirate's Treasure Hunt</h1>
+                <h1 className="text-4xl font-bold mb-8 text-center text-yellow-700">Pirate&apos;s Treasure Hunt</h1>
 
                 {!gameStarted && (
                     <Card className="mb-8 bg-yellow-50 border-2 border-yellow-600">
