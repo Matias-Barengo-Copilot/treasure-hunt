@@ -1,12 +1,13 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Anchor, Compass, Map, Skull, Swords } from 'lucide-react'
 import React from 'react'
+import Image from 'next/image'
 
 const itemList = [
     "Something red",
@@ -259,10 +260,12 @@ export function TreasureHunt() {
                     </Card>
                 )}
             </motion.div>
-            <img
+            <Image
                 src="/images/treasure.png"
                 alt="Treasure Chest"
-                className="absolute top-4 left-4 w-20 h-20 animate-pulse"
+                width={80}
+                height={80}
+                className="absolute top-4 left-4 animate-pulse"
             />
         </div>
     )
